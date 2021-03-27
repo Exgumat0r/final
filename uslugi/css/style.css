@@ -1,0 +1,938 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+html, body{width:100%; overflow-x:hidden}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+}
+.hdr img {
+  margin-top: 0px;
+}
+
+body {
+  background: #fffaf0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: #fffaf0;
+
+
+
+
+}
+a {
+  text-decoration: none;
+  transition: color 600ms ease;
+  font-size: 20px;
+
+}
+
+img {max-width: 100%}
+header {
+  width: 90%;
+  padding: 20px 5%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+header > .logo {
+  font-size: 13px;
+  font-weight: 700;
+  align-items: center;
+  color: OrangeRed;
+
+}
+.hdr {
+color: OrangeRed;
+background-color: black;
+position: fixed;
+border-bottom: 2px solid OrangeRed;
+z-index:200;
+
+}
+
+header > .nav {
+  position: relative;
+  left: -50px;
+}
+header > .nav a {
+  margin: 0 15px;
+  display: inline-block;
+  color: white;
+}
+
+header > .nav a:hover {color: OrangeRed}
+
+header > .menu {
+  cursor: pointer;
+  color: white;
+  font-size: 29px;
+}
+.fixed {
+  position: fixed;
+  top:0;
+  left: 0;
+  border-bottom: 2px solid OrangeRed;
+}
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  height: 50vh;
+  background: black;
+  z-index: 400;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 2px solid OrangeRed;
+  border-left: 2px solid OrangeRed;
+  border-top: 2px solid OrangeRed;
+  border-right: 2px solid OrangeRed;
+}
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 600ms ease;
+  color: white;
+}
+#hidden-menu .close:hover {color: OrangeRed}
+
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: white;
+}
+#hidden-menu ul {list-style: none}
+#hidden-menu ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+#hidden-menu ul li a {color:white}
+#hidden-menu ul li a:hover {color:OrangeRed}
+
+header > .menu:hover {
+  transition: color 600ms ease;
+  color: OrangeRed;
+}
+
+
+}
+.vse {
+  margin-left: 650px;
+  margin-top: -80px;
+}
+.full-page h1{
+  padding-top: 250px;
+  font-size:45px;
+  width: 500px;
+  margin: 0 auto;
+}
+.full-page h3 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ccc;
+}
+ .bg-fixed button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-weight: 500;
+  transition: background 600ms ease;
+}
+.full-page button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  font-weight: 500;
+  transition: background 600ms ease;
+}
+
+ .full-page button:hover, .bg-fixed button:hover {
+  background: OrangeRed;
+}
+.full-page button i, .bg-fixed button i {
+margin-left: 5px;
+transition: margin 600ms ease;
+}
+.full-page button:hover i {
+  margin-left: 15px;
+  color: white;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+  background-color: coral;
+  border-radius: 10px;
+   background: #fffaf0;
+   background: linear-gradient(45deg, white, coral);
+}
+.features > div {
+  width: 300px;
+  text-align: center;
+  margin: 50px 10px;
+
+}
+.features > img {
+  width: 60px;
+  margin-top: 10px;
+
+}
+.features > h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #454545;
+
+}
+.one {
+vertical-align: bottom 10px;
+outline: none;
+
+}
+.features > div p {
+  font-weight: 400;
+  margin-top: 10px;
+}
+.gallery {
+  width: 70%;
+  margin: 50px 15%;
+  position: relative;
+  left: 100px;
+}
+.gallery div {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.gallery .arrow-prev, .gallery .arrow-next {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transition: all 60ms ease;
+}
+.gallery .arrow-prev:hover, .gallery .arrow-next:hover{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.gallery .arrow-prev{left:-50px}
+.gallery .arrow-next{right:-30px}
+.bg-fixed {
+  background: url('../img/ссс.jpg') no-repeat center center;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+
+}
+.bg-fixed h3 {
+  font-size: 25px;
+  padding-top: 130px;
+  margin-bottom: 20px;
+}
+.bg-fixed input {
+  padding: 14px 20px;
+  width: 300px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #fafafa;
+}
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .up-btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #0a0a0a;
+  border: 1px solid silver;
+  cursor:pointer;
+  color: OrangeRed;
+  transition: transform 600ms ease;
+}
+footer .social div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 30%;
+  background: #0a0a0a;
+  border: 1px solid silver;
+  cursor:pointer;
+  color: OrangeRed;
+  transition: transform 600ms ease;
+}
+footer .up-btn:hover, footer .social div:hover {
+  transform: translateY(-10px);
+}
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+footer {
+  background-color: #fffaf0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    margin-left: 60px;
+    }
+    .features img {
+      max-height: 150px;
+      max-width: 150px;
+    }
+    .full-page button {
+      padding: 15px 20px;
+
+    }
+    .full-page h1 {
+
+      font-size:30px;
+
+      margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width: 1152px) {
+
+    .features img {
+      max-height: 135px;
+      max-width: 135px;
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+
+    .features img {
+      max-height: 135px;
+      max-width: 135px;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+.nav {
+  display: none;
+}
+.features img {
+  max-height: 110px;
+  max-width: 110px;
+}
+.one {
+  font-size: 16px;
+
+}
+.features p {
+  font-size: 14px;
+}
+
+}
+@media only screen and (max-width: 768px) {
+.features {
+  display: block;
+}
+.vse {
+  font-size: 12px;
+  align-items: center;
+  display: none;
+
+}
+}
+
+@media only screen and (max-width: 480px) {
+  html, body{width:100%; overflow-x:hidden}
+
+  .full-page h1 {
+
+    font-size:25px;
+
+    margin: 0 auto;
+  }
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+  .full-page p {
+
+    font-size:15px;
+
+    margin: 0 auto;
+  }
+  .full-page h1{
+    padding-top: 160px;
+    font-size:25px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .full-page h3 {
+    margin: 20px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ccc;
+  }
+  .features > div p {
+    font-weight: 400;
+    margin-top: 10px;
+    width: 210px;
+  }
+  .one {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 220px;
+    color: black;
+
+}
+.features img {
+margin-left: -80px;
+}
+.vse {
+  font-size: 12px;
+  align-items: center;
+  display: none;
+
+}
+#hidden-menu {
+  height: auto;
+
+}
+.up-btn {
+  border-radius: 50%;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 345px) {
+.promo-photo {
+  width:  200px;
+  height: 100px;
+}
+.card:first-of-type{
+  margin-top: 100px;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+
+
+/* Сards */
+
+}
+.card {
+  width: 500px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 5px Black;
+  margin-left: auto;
+  margin-right: auto;
+transition: transform 600ms ease;
+}
+.card:hover {
+transition: transform 600ms ease;
+transform: translateY(-10px);
+}
+.promo-title {
+  margin-left: 25px;
+  font-size: 35px;
+  max-width: 450px;
+  padding-top: 30px;
+  text-align: center;
+
+}
+.dvig {
+  text-align: center;
+
+}
+.promo-text {
+  max-width: 400px;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.promo-photo {
+  margin-left: 50px;
+  border-radius: 15px;
+}
+
+
+.price {
+
+font-size: 19px;
+margin-left: 150px;
+background-color: OrangeRed;
+border-radius: 3px;
+color: white;
+padding: 3px;
+
+}
+.uslugi {
+  display: flex;
+  max-width: 2000px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+}
+.dvig2 {
+  text-align: center;
+}
+.promo-photo1 {
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+.price1 {
+  margin-top: 50px;
+
+}
+.promo-text1 {
+  margin-top: 20px;
+}
+.promo-title1 {
+  text-align: center;
+}
+.dvig1 {
+  margin-bottom: 15px;
+  text-align: center;;
+}
+.promo-title2 {
+  text-align: center;;
+}
+.promo-title3 {
+
+text-align: center;
+
+}
+.dvig3 {
+  margin-left: 75px;
+}
+
+.promo-title4 {
+  margin-left: 50px;
+text-align: center;
+max-width: 400px;
+}
+.promo-text2 {
+  max-width: 400px;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+.promo-photo9 {
+  margin-left: 30px;
+}
+.promo-title5 {
+text-align: center;
+max-width: 450px;
+}
+.promo-photo8 {
+  margin-left: 85px;
+}
+.promo-title6 {
+  max-width: 400px;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.promo-title7 {
+  max-width: 400px;
+  text-align: center;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.promo-photo99 {
+  margin-left: 90px;
+}
+.promo-title66 {
+  max-width: 400px;
+  text-align: center;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.promo-photo66 {
+  margin-left: 130px;
+}
+header > .nav .uslug {
+  margin: 0 15px;
+  display: inline-block;
+  color: OrangeRed;
+}
+.promo-text99 {
+  margin-top: 10px;
+}
+#hidden-menu .uslugg {
+  color:OrangeRed;
+}
+@media only screen and (max-width: 415px) {
+  .promo-title {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 1px;
+    }
+    .card:first-of-type{
+      margin-top: 100px;
+    }
+
+  .promo-photo {
+    width: 300px;
+    height: 200px;
+
+  }
+  .promo-photo129 {
+  margin-left: 70px;
+  }
+  .promo-text {
+    font-size: 16px;
+    max-width: 350px;
+  margin-left: -10px;
+  }
+  .price {
+    font-size: 15px;
+    margin-left: 135px;
+    margin-top: 20px;
+  }
+  .promo-photo1 {
+    margin-left:50px;
+  }
+  .promo-title1 {
+    max-width: 350px;
+    margin-left: 33px;
+  }
+  .promo-photo1488 {
+    margin-left: 60px;
+  }
+  .promo-photo9 {
+    width: 380px;
+  }
+  .promo-title6 {
+    margin-left: -30px;
+  }
+.promo-photo8 {
+  width: 200px;
+  margin-left: 100px;
+}
+.promo-photo99 {
+  margin-left: 65px;
+}
+.promo-title7 {
+  margin-left: -30px;
+}
+.promo-photo66 {
+  width: 230px;
+  margin-left: 100px;
+}
+.promo-title66 {
+  margin-left: -15px;
+}
+
+
+}
+@media only screen and (max-width: 392px) {
+  .promo-text {
+    max-width: 310px;
+    margin-left: 0px;
+  }
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+  .price {
+    margin-left: 122px;
+  }
+  .promo-photo66 {
+    margin-left: 90px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .promo-photo {
+    margin-left: 50px;
+  }
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+  .promo-text {
+    max-width: 310px;
+    margin-left: -4px;
+  }
+  .promo-title {
+    font-size: 23px;
+  }
+  .price {
+    margin-left: 122px;
+  }
+  .promo-photo1 {
+    width: 300px;
+    height: 200px;
+  }
+  .promo-title1 {
+    max-width: 300px;
+  }
+  .promo-photo1488 {
+    margin-left: 40px;
+  }
+  .promo-photo4 {
+    margin-left: 35px;
+  }
+  .promo-title4 {
+    max-width: 300px;
+  margin-left: 40px;
+  }
+  .promo-photo500 {
+    width: 250px;
+    height: 150px;
+    margin-left: 70px;
+  }
+  .promo-title5 {
+      max-width: 300px;
+      margin-left: 40px;
+  }
+  .promo-photo9 {
+    width: 270px;
+    height: 150px;
+    margin-left: 70px;
+  }
+  .promo-title6 {
+    max-width: 300px;
+  margin-left: 1px;
+  }
+  .promo-photo8 {
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+  }
+  .promo-title7 {
+    max-width: 300px;
+  margin-left: 1px;
+  }
+  .promo-photo99 {
+    width: 280px;
+    height: 180px;
+  }
+  .promo-title66 {
+    max-width: 300px;
+  margin-left: 23px;
+  }
+  .promo-photo66 {
+    width: 180px;
+    height: 160px;
+    margin-left: 100px;
+  }
+  .price134 {
+    margin-left: 115px;
+  }
+  .up-btn, .social {
+    margin-top: -90px;
+    margin-bottom: -60px;
+  }
+  .card {
+    margin-bottom: 25px;
+  }
+
+}
+@media only screen and (max-width: 340px) {
+  .promo-text {
+    margin-left: -30px;
+  }
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+  .price {
+    margin-left: 90px;
+  }
+  .promo-title {
+    margin-left: 10px;
+  }
+  .promo-title1 {
+    margin-left: 20px;
+  }
+  .promo-photo1488 {
+    margin-left: 26px;
+  }
+  .promo-photo1 {
+  margin-left: 26px;
+  }
+  .promo-photo129 {
+      margin-left: 26px;
+  }
+  .promo-photo4 {
+      margin-left: 20px;
+  }
+  .promo-title4 {
+    margin-left: 20px;
+  }
+  .promo-photo500 {
+    margin-left: 40px;
+  }
+  .promo-title5 {
+    margin-left: 20px;
+  }
+  .promo-photo9 {
+      margin-left: 40px;
+  }
+  .promo-title6 {
+    margin-left: -20px;
+  }
+  .promo-photo8 {
+      margin-left: 60px;
+  }
+  .promo-title7 {
+    margin-left: -20px;
+  }
+  .promo-photo99 {
+    margin-left: 30px;
+  }
+  .promo-title66 {
+    margin-left: 0px;
+  }
+  .promo-photo66 {
+    margin-left: 80px;
+  }
+  .price {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .promo-photo {
+    width: 250px;
+    height: 150px;
+  }
+  .card:first-of-type{
+    margin-top: 100px;
+  }
+  .promo-text {
+    max-width: 290px;
+    margin-left: -25px;
+  }
+  .promo-title {
+    font-size: 21px;
+    max-width: 300px;
+    margin-left: 11px;
+  }
+  .price {
+    margin-left: 85px;
+  }
+  .price1 {
+    margin-left: 81px;
+  }
+  .router {
+    margin-left: 85px;
+  }
+  .vu {
+    margin-left: 88px;
+  }
+  .promo-photo500 {
+    width: 240px;
+    height: 140px;
+    margin-left: 40px;
+  }
+  .promo-photo1 {
+    width: 270px;
+    height: 170px;
+    margin-left: 37px;
+  }
+  .promo-title1 {
+    max-width: 300px;
+  }
+  .promo-photo1488 {
+    margin-left: 40px;
+  }
+  .promo-photo4 {
+    margin-left: 35px;
+    width:220px;
+  }
+  .promo-title4 {
+    max-width: 300px;
+  margin-left: 15px;
+  }
+
+  .promo-title5 {
+      max-width: 300px;
+      margin-left: 15px;
+  }
+  .promo-photo9 {
+    width: 270px;
+    height: 150px;
+    margin-left: 35px;
+  }
+  .promo-title6 {
+    max-width: 300px;
+  margin-left: -30px;
+  }
+  .promo-photo8 {
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+  }
+  .promo-title7 {
+    max-width: 300px;
+  margin-left: -30px;
+  }
+  .promo-photo99 {
+    width: 280px;
+    height: 180px;
+    margin-left: 26px;
+  }
+  .promo-title66 {
+    max-width: 300px;
+  margin-left: -9px;
+  }
+  .promo-photo66 {
+    width: 180px;
+    height: 160px;
+    margin-left: 75px;
+  }
+  .price134 {
+    margin-left: 90px;
+  }
+  .up-btn, .social {
+    margin-top: -90px;
+    margin-bottom: -60px;
+  }
+  .card {
+    margin-bottom: 25px;
+  }
+}

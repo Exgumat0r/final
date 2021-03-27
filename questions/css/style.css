@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+html, body{width:100%; overflow-x:hidden}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+}
+.hdr img {
+  margin-top: 0px;
+}
+
+body {
+  background: #fffaf0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: #fffaf0;
+
+
+
+
+}
+a {
+  text-decoration: none;
+  transition: color 600ms ease;
+  font-size: 20px;
+
+}
+.vkins {
+  text-decoration: none;
+  transition: color 600ms ease;
+  font-size: 15px;
+  color: OrangeRed;
+}
+.vkins:hover {
+  color: red;
+    transition: color 600ms ease;
+}
+
+
+img {max-width: 100%}
+header {
+  width: 90%;
+  padding: 20px 5%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  border-bottom: 2px solid OrangeRed;
+
+}
+header > .logo {
+  font-size: 13px;
+  font-weight: 700;
+  align-items: center;
+  color: OrangeRed;
+}
+.hdr {
+color: OrangeRed;
+background-color: black;
+z-index: 400;
+}
+
+header > .nav {
+  position: relative;
+  left: -50px;
+}
+header > .nav a {
+  margin: 0 15px;
+  display: inline-block;
+  color: white;
+}
+header > .nav .quest {
+  margin: 0 15px;
+  display: inline-block;
+  color: OrangeRed;
+}
+#hidden-menu .alquest {
+  color: OrangeRed;
+}
+
+header > .nav a:hover {color: OrangeRed}
+
+header > .menu {
+  cursor: pointer;
+  color: white;
+  font-size: 29px;
+}
+.fixed {
+  position: sticky;
+  top:0;
+  left: 0;
+  border-bottom: 2px solid OrangeRed;
+}
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  height: 50vh;
+  background: black;
+  z-index: 500;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 2px solid OrangeRed;
+  border-left: 2px solid OrangeRed;
+  border-top: 2px solid OrangeRed;
+  border-right: 2px solid OrangeRed;
+}
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 600ms ease;
+  color: white;
+}
+#hidden-menu .close:hover {color: OrangeRed}
+
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: white;
+}
+#hidden-menu ul {list-style: none}
+#hidden-menu ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+#hidden-menu ul li a {color:white}
+#hidden-menu ul li a:hover {color:OrangeRed}
+
+
+
+header > .menu:hover {
+  transition: color 600ms ease;
+  color: OrangeRed;
+}
+
+
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .up-btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #0a0a0a;
+  border: 1px solid silver;
+  cursor:pointer;
+  color: OrangeRed;
+  transition: transform 600ms ease;
+}
+.social {
+
+}
+
+footer .social div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 30%;
+  background: #0a0a0a;
+  border: 1px solid silver;
+  cursor:pointer;
+  color: OrangeRed;
+  transition: transform 600ms ease;
+
+}
+footer .up-btn:hover, footer .social div:hover {
+  transform: translateY(-10px);
+}
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+footer {
+  background-color: #fffaf0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    margin-left: 60px;
+    }
+    .faq-questions {
+      margin-left: -40px;
+
+    }
+
+
+
+}
+@media only screen and (max-width: 1152px) {
+
+
+
+}
+@media only screen and (max-width: 1024px) {
+
+
+}
+@media only screen and (max-width: 992px) {
+.nav {
+  display: none;
+}
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
+  html, body{width:100%; overflow-x:hidden}
+  .hdr {
+    position: fixed;
+
+  }
+#hidden-menu {
+  height: auto;
+
+}
+.up-btn {
+  border-radius: 50%;
+}
+
+}
+@media only screen and (max-width: 320px) {
+
+header > .nav .quest {
+  margin: 0 15px;
+  display: inline-block;
+  color: OrangeRed;
+}
+
+#hidden-menu .alquest {
+  color: OrangeRed;
+}
+}
+/* Questions styles */
+:after, :before,  {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  display: block;
+  margin-top: 120px;
+}
+
+.container .nice-header {
+  text-align: center;
+  font-size: 4.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #D8D8D8;
+  position: relative;
+}
+.container .nice-header .sub {
+  color: #676767;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-family: Georgia, serif;
+  font-size: 13pt;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: none;
+}
+.container .nice-header .sub:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.container .faq {
+  width: 100%;
+  position: relative;
+}
+.container .faq-questions {
+  list-style: none;
+}
+.container .faq-questions, .container .faq-questions > li {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border-radius: 2px;
+}
+.container .faq-questions > li:nth-child(odd) {
+  background-color: #E8E8E8;
+}
+
+.container .faq-questions > li:nth-child(even) {
+  background-color: #D8D8D8;
+}
+.container .faq-questions > li h4.faq-question, .container .faq-questions > li faq-question {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #4E4E4E;
+  cursor: pointer;
+}
+.container .faq-questions > li p.faq-answer, .container .faq-questions > li .faq-asnwer {
+  font-size: 15pt;
+  line-height: 1.5;
+  margin-top: 7px;
+  display: none;
+}
+.container .faq-questions > li p.faq-answer:hover, .container .faq-questions > li .faq-asnwer:hover {
+  color: #000;
+}
